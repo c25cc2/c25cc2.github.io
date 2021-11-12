@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+
+
+		function MakeCookie(){
+			var cookie = document.createElement("div")
+			document.body.appendChild(cookie);
+			cookie.style.backgroundImage ="url(barbie.jpg)";
+			cookie.style.height = "200px";
+			cookie.style.width = "200px";
+		
+
+			cookie.addEventListener("click",function(){
+				cookie.style.backgroundImage="url(cupcake.png)";
+					
+			})
+			}
+				setInterval(MakeCookie, 500);
+				makeCookie()
+	</script>
+
+</body>
+</html>
