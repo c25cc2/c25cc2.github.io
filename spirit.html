@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<center>EMOJIS</center>
+	<div id="box"></div>
+	<script type="text/javascript">
+		var box = document.getElementById('box');
+
+
+		var randomEmojis = ["😍:you are loving.","🍄:you are wild.","🎂:you are spirited.","🥶: you are cool.","🤪: you are crazy.","🦄: you are unique.","🐼:you are adorable.","🍦: you are a treat.","👻: you are scary.","⭐: you are a star.","🛼: you are talented.","💍: you are lucky.","🤩: you are bright.","🙈: you are mysterious.","💜:you are amazing.","🍋: you are sour."]
+
+
+		var random = Math.floor(Math.random()*15);
+
+		console.log(random)
+
+		box.innerText = randomEmojis[random]
+
+
+
+
+	</script>
+
+</body>
+</html>
