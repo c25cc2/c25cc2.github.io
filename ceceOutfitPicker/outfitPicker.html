@@ -1,0 +1,186 @@
+ <!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+  
+  #title{
+    font-size: 40px;
+    position: absolute;
+    top: 0px;
+    color: hotpink;
+    font-family: 'Koulen', cursive;;
+    font-size: 55px;
+
+  }
+
+  #heart{
+    width: 300px;
+    height: 300px;
+    background-image: url(heart.png);
+    position: absolute;
+    background-size: cover;
+    top: 0px;
+    left: 1000px;
+  }
+
+    #shirt {
+        width: 200px;
+        height: 200px;
+        z-index: 2;
+        background-size: cover;
+        background-position: center;
+
+    }
+      #pant {
+        z-index: 2;
+        width: 200px;
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+    }
+
+       #shoes{
+        width: 250px;
+        height: 250px;
+        background-size: cover;
+        background-position: center;
+       }
+
+    #sweatshirt{
+        width: 200px;
+        position: absolute;
+        height: 200px;
+        left: 350px;
+        background-size: cover;
+        top: 0px;
+    }
+       body{
+        margin: 0px;
+        background-color: lightblue;
+       }
+
+    
+ </style>
+</head>
+
+<body>
+    <center>
+
+        <div id="shirt"></div>
+         <div id="sweatshirt"></div>
+         <div id="pant"></div>
+         <div id="shoes"></div>
+         <div id="title">Cece's Outfit Picker</div>
+         <div id="heart"></div>
+
+    </center>
+    <script type="text/javascript">
+    var shirtNumber = 0;
+    var pantNumber = 0;
+    var shoesNumber = 0;
+    var sweatshirtNumber = 0;
+
+    shirt.addEventListener("click", function() {
+
+        if (shirtNumber >= 3)
+        {
+            shirtNumber = 0
+            console.log(shirtNumber)
+
+        }
+
+
+
+        else if (shirtNumber <= 3) {
+
+            shirtNumber = shirtNumber + 1;
+            shirt.style.backgroundImage = "url(shirt" + shirtNumber + ".png)"
+
+
+            console.log(shirtNumber)
+
+        }
+    })
+
+
+
+
+     pant.addEventListener("click", function() {
+
+        if (pantNumber >= 3)
+        {
+            pantNumber = 0
+            console.log(pantNumber)
+
+        }
+
+
+        else if (pantNumber <= 3) {
+
+            pantNumber = pantNumber + 1;
+            pant.style.backgroundImage = "url(pant" + pantNumber + ".png)"
+
+
+            console.log(pantNumber)
+
+        }
+    })
+
+      shoes.addEventListener("click", function() {
+
+        if (shoesNumber >= 3)
+        {
+            shoesNumber = 0
+            console.log(pantNumber)
+
+        }
+
+
+        else if (shoesNumber <= 3) {
+
+            shoesNumber = shoesNumber + 1;
+            shoes.style.backgroundImage = "url(shoes" + shoesNumber + ".png)"
+
+
+            console.log(shoesNumber)
+
+        }
+
+    })
+
+        sweatshirt.addEventListener("click", function() {
+            console.log("hi")
+
+        if (sweatshirtNumber >= 3)
+        {
+            sweatshirtNumber = 0
+            console.log(sweatshirtNumber)
+
+        }
+
+
+        else if (sweatshirtNumber <= 3) {
+
+            sweatshirtNumber = sweatshirtNumber + 1;
+            sweatshirt.style.backgroundImage = "url(sweatshirt" + sweatshirtNumber + ".png)"
+
+
+            console.log(sweatshirtNumber)
+
+        }
+
+    })
+
+
+    </script>
+</body>
+
+</html>
+

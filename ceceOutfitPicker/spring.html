@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+    #shirt {
+        width: 200px;
+        height: 200px;
+        border: 1px black solid;
+        background-size: cover;
+        background-position: center;
+    }
+      #pants {
+        width: 200px;
+        height: 200px;
+        border: 1px black solid;
+        background-size: cover;
+        background-position: center;
+    }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div id="shirt"></div>
+         <div id="pants"></div>
+
+    </center>
+    <script type="text/javascript">
+    var shirtNumber = 0;
+    var pantNumber = 0;
+
+    shirt.addEventListener("click", function() {
+
+        if (shirtNumber >= 3)
+        {
+            shirtNumber = 0
+            console.log(shirtNumber)
+
+        }
+
+
+
+        else if (shirtNumber <= 3) {
+
+            shirtNumber = shirtNumber + 1;
+            shirt.style.backgroundImage = "url(shirt" + shirtNumber + ".png)"
+
+
+            console.log(shirtNumber)
+
+        }
+    })
+
+
+
+
+     pant.addEventListener("click", function() {
+
+        if (pantNumber >= 3)
+        {
+            pantNumber = 0
+            console.log(pantNumber)
+
+        }
+
+
+        else if (pantNumber <= 3) {
+
+            pantNumber = pantNumber + 1;
+            pant.style.backgroundImage = "url(pant" + pantNumber + ".png)"
+
+
+            console.log(pantNumber)
+
+        }
+    })
+    </script>
+</body>
+
+</html>
+
